@@ -61,14 +61,16 @@ table {
 }
 
 .div_1 {
-    width: 1445px;
+    max-width: 1445px;
     height: 768px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 32.99px;
+    text-align: center;
 }
 
 .menu {
+    text-decoration: none;
     display: inline;
     font-family: 'Gilroy Text';
     font-weight: bold;
@@ -78,12 +80,39 @@ table {
 }
 
 .menu_black {
+    text-decoration: none;
     display: inline;
     font-family: 'Gilroy Text';
     font-weight: bold;
     font-size: 18px;
     line-height: 22.28px;
     color: #070707;
+}
+
+.mob-menu {
+    padding: 67px;
+    text-decoration: none;
+    display: inline;
+    font-family: 'Gilroy Text';
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 34px;
+    color: #828282;
+}
+
+.mob-menu_black {
+    padding: 67px;
+    text-decoration: none;
+    display: inline;
+    font-family: 'Gilroy Text';
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 34px;
+    color: #090909;
+}
+
+.li-mob {
+    margin-bottom: 68px;
 }
 
 .line {
@@ -103,9 +132,55 @@ table {
     margin-top: 10px;
 }
 
+.menu-mob {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    position: fixed;
+    display: none;
+}
+
+.box_menu-mob {
+
+    text-align: left;
+
+}
+
+.ul_menu-mob {
+    align: left;
+    margin-top: 66px;
+}
+
 .ul_menu {
     display: flex;
     justify-content:space-between;
+}
+
+.header-text-mob {
+    margin-top: 0;
+}
+
+.header-nav-mob {
+    margin-top: 0;
+}
+
+.nav-button {
+    border: 0;
+    background-color: transparent;
+    float: right;
+    display: none;
+    margin-top: 0;
+}
+
+.nav-button-close {
+    border: 0;
+    background-color: transparent;
+    float: right;
+    position: relative;
+    margin-right: 26px;
+    margin-top: -510px;
 }
 
 .name {
@@ -118,12 +193,18 @@ table {
     margin-top: 39.69px;
 }
 
+.name.mob {
+    text-align: left;
+    margin-top: 0px;
+}
+
 .name_flex {
     width: 940.6px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content:space-between;
+    align-items: flex-end;
 }
 
 .rus_eng {
@@ -134,12 +215,25 @@ table {
     font-size: 16px;
     line-height: 19.81px;
     margin-top: 39.69px;
-    transform: rotate(-90deg);
+}
+
+.header-mob {
+
+    display: none;
+ 
 }
 
 .foto {
     text-align: center;
     margin-top: 49.67px;
+
+}
+
+.foto-mob {
+    width: 317px;
+    text-align: center;
+    margin-top: 49.67px;
+    display: none;
 }
 
 .podzag {
@@ -151,13 +245,23 @@ table {
     margin-top: 94.77px;
 }
 
+.podzag.mob {
+    text-align: left;
+}
+
 .img_foto {
     width: 943.61px;
     height: 387px;
 }
 
+.img_foto-mob {
+    text-align: center;
+    width: 316.5px;
+    height: 478px;
+}
+
 .div_2 {
-    width: 1445px;
+    max-width: 1445px;
     height: 506px;
     margin-left: auto;
     margin-right: auto;
@@ -186,7 +290,7 @@ table {
 }
 
 .div_3 {
-    width: 1445px;
+    max-width: 1445px;
     height: 610px;
     margin-left: auto;
     margin-right: auto;
@@ -218,12 +322,20 @@ table {
     height: 88.41px;
 }
 
+.img_flex.img_figma {
+    width: 58px;
+}
+
 .div_img_flex {
     width: 89.07px;
     height: 88.41px;
     margin-left: auto;
     margin-right: auto;
     background-color: black;
+}
+
+.div_img_flex.div_img_figma {
+    background-color: transparent;
 }
 
 .flex {
@@ -234,6 +346,10 @@ table {
 .flex_div {
 /*    width: 250px;
     height: 90px;*/
+    text-align: center;
+}
+
+.flex_div_first {
     text-align: center;
 }
 
@@ -254,15 +370,12 @@ table {
     margin-top: 24.21px;
 }
 
-.flex_star_flex {
-    display: flex;
-    justify-content: space-around;
-    width: 176px;
+.star {
     margin-top: 41.41px;
 }
 
 .div_4 {
-    width: 1445px;
+    max-width: 1445px;
     height: 2253px;
     margin-left: auto;
     margin-right: auto;
@@ -308,7 +421,7 @@ table {
 }
 
 .div_5 {
-    width: 1445px;
+    max-width: 1445px;
     height: 622px;
     margin-left: auto;
     margin-right: auto;
@@ -337,8 +450,8 @@ table {
 }
 
 .btn {
-    width: 166.46px;
-    height: 38px;
+    width: 180.5px;
+    height: 42px;
     background-color:#070707;
     border-radius: 38px;
     text-align: center;

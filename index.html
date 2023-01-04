@@ -4,28 +4,66 @@
 <meta charset="UTF-8"> <!-- Определяем кодировку символов документа -->
 <title>Portfolio landing page</title> <!-- Задаем заголовок документа -->
 <link rel="stylesheet" type="text/css" href="css/main.css"> <!-- Подключаем внешнюю таблицу стилей -->
+<link rel="stylesheet" type="text/css" href="css/media.css">
 <script src="script.js"></script> <!-- Подключаем сценарии -->
 </head>
 <body> <!-- Основная часть документа -->
     <div class="div_1">
         <div class="box_menu">
             <ul class="ul_menu">
-                <li class="menu_black">
-                    Home
+                <li>
+                    <a href="#" class="menu_black">Home</a>
                 </li>
-                <li class="menu">
-                    About me
+                <li>
+                    <a href="#" class="menu">About me</a>
                 </li>
-                <li class="menu">
-                    Skills
+                <li>
+                    <a href="#" class="menu">Skills</a>
                 </li>
-                <li class="menu">
-                    Portfolio
+                <li>
+                    <a href="#" onclick=pnl() class="menu">Portfolio</a>
                 </li>
-                <li class="menu">
-                    Contacts
+                <li>
+                    <a href="#" onclick="alert('Клик!')" class="menu">Contacts</a>
                 </li>
             </ul>
+        </div>
+        <div class="menu-mob" id="menu-mob">
+            <div class="box_menu-mob" id="box_menu-mob">
+                <ul class="ul_menu-mob">
+                    <li class="li-mob">
+                        <a href="#" class="mob-menu_black">Home</a>
+                    </li>
+                    <li class="li-mob">
+                        <a href="#" class="mob-menu">About me</a>
+                    </li>
+                    <li class="li-mob">
+                        <a href="#" class="mob-menu">Skills</a>
+                    </li>
+                    <li class="li-mob">
+                        <a href="#" class="mob-menu">Portfolio</a>
+                    </li>
+                    <li class="li-mob">
+                        <a href="#" class="mob-menu">Contacts</a>
+                    </li>
+                </ul>
+                <button class="nav-button-close">
+                    <img src="images/nav-close.png" onclick='menuclose()' alt="Close menu">
+                </button>
+            </div>
+        </div>
+        <div class="header-mob">
+            <div class="header-text-mob">
+                <p class="name mob">Denis<br>
+                    Novik</p>
+                    <p class="podzag mob">UX | UI designer<br>
+                        24 years old, Minsk</p>
+            </div>
+            <div class="header-nav-mob">
+                <button class="nav-button">
+                    <img src="images/nav-open.png" onclick='menuopen()' alt="Open menu">
+                </button>
+            </div>
         </div>
         <div class="line">
         </div>
@@ -37,6 +75,7 @@
             <p class="rus_eng">RU | ENG</p>
         </div>
         <p class="foto"><img src='images/foto.png' class="img_foto"></p>
+        <p class="foto-mob" id="mob-open"><img src='images/foto-mob.png' class="img_foto-mob"></p>
     </div>
     <div class="div_2">
         <p class="div_2_zag">About me</p>
@@ -52,19 +91,13 @@
         <p class="div_3_text">I work in such programs as</p>
         <div class="flex_vnesh">
             <div class="flex">
-               <div class="flex_div">
+               <div class="flex_div_first">
                     <div class='div_img_flex'>
                         <img src="images/ps.png" class="img_flex">
                     </div>
                     <p class="text_flex">Adobe<br>
                         Photoshop</p>
-                    <div class="flex_star_flex">
-                        <img src="images/star-black.png">
-                        <img src="images/star-black.png">
-                        <img src="images/star-black.png">
-                        <img src="images/star-black.png">
-                        <img src="images/star-bright.png">
-                    </div>
+                        <img src="images/star-four.png" class="star">
                 </div>
                 <div class="flex_div">
                     <div class='div_img_flex'>
@@ -72,13 +105,7 @@
                     </div>
                     <p class="text_flex">Adobe<br>
                         Illustrator</p>
-                    <div class="flex_star_flex">
-                        <img src="images/star-black.png">
-                        <img src="images/star-black.png">
-                        <img src="images/star-black.png">
-                        <img src="images/star-bright.png">
-                        <img src="images/star-bright.png">
-                    </div>
+                        <img src="images/star-three.png" class="star">
                 </div>
                 <div class="flex_div">
                     <div class='div_img_flex'>
@@ -86,26 +113,14 @@
                     </div>
                     <p class="text_flex">Adobe<br>
                         After Effects</p>
-                        <div class="flex_star_flex">
-                            <img src="images/star-black.png">
-                            <img src="images/star-black.png">
-                            <img src="images/star-black.png">
-                            <img src="images/star-black.png">
-                            <img src="images/star-bright.png">
-                        </div>
+                        <img src="images/star-four.png" class="star">
                 </div>
                 <div class="flex_div">
-                    <div class='div_img_flex'>
-                        <img src="images/ae.png" class="img_flex">
+                    <div class='div_img_flex div_img_figma'>
+                        <img src="images/figma.png" class="img_flex img_figma">
                     </div>
                     <p class="text_flex">Figma</p><br>
-                    <div class="flex_star_flex">
-                        <img src="images/star-black.png">
-                        <img src="images/star-black.png">
-                        <img src="images/star-black.png">
-                        <img src="images/star-black.png">
-                        <img src="images/star-bright.png">
-                    </div>
+                    <img src="images/star-four.png" class="star">
                 </div>
             </div>
         </div>
@@ -133,5 +148,6 @@
         <p class="contact_text">Like me on<br>
             LinkedIn, Instagram, Behance, Dribble</p>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,132 @@
+@media (max-width: 1230px) {
+    .nav-button {
+        display: inline;
+    }
+
+    .ul_menu {
+        display: none;
+    }
+
+    .menu-mob {
+
+    
+    }
+
+    .big-mob {
+        min-width: 300px;
+        display: block;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .header-mob {
+        width: 317px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        display: flex;
+        justify-content:space-between;
+    }
+
+    .div_3_zag {
+        margin-top: 83px;
+    }
+
+    .div_3_text {
+        margin-top: 50px;
+    }
+
+    .name_flex {
+        display: none;
+    }
+
+    .foto-mob {
+        display: inline;
+    }
+
+    .foto {
+        display: none;
+    }
+
+    .div_3 {
+        height: 1421px;
+    }
+
+
+    .flex_vnesh {
+        width: 375px;
+        margin-top: 71px;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .flex_div {
+        margin-top: 81px;
+    }
+
+    .flex_div_first {
+        margin-top: 0;
+    }
+
+    .portfolio {
+        margin-top: 81px;
+    }
+
+    .div_4 {
+        height: 298%;
+        padding-bottom: 1px;
+    }
+
+    .img_port {
+        width: 84%;
+        height: 47%;
+    }
+
+    .img_port_big {
+        width: 84%;
+        height: 47%;
+    }
+
+    .p_port {
+        margin-bottom: 34px;
+    }
+
+    .text_port {
+        margin-bottom: 77px;
+    }
+
+    .contact_text {
+        font-size: 18px;
+        line-height: 21.83px;
+        margin-top: 48.78px;
+    }
+
+    .btn {
+        width: 316px;
+        height: 42px;
+    }
+
+    .div_5 {
+        height: 569px;
+    }
+
+    .div_5_zag {
+        margin-top: 82px;
+    }
+
+    .div_5_flex {
+        width: 315px;
+        margin-top: 48px;
+    }
+
+    .contact_text {
+        margin-bottom: 90px;
+    }
+    
+}
