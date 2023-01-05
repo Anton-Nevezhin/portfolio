@@ -3,7 +3,7 @@
 	font-style: normal;
 	font-weight: bold;
 	src: local('Gilroy Text'),
-		url('../fonts/Radomir Tinkov - Gilroy-ExtraBold.otf') format('woff2');
+		url('../fonts/Gilroy-Bold.ttf') format('woff2');
 }
 
 @font-face {
@@ -11,7 +11,15 @@
 	font-style: normal;
 	font-weight: medium;
 	src: local('Gilroy Text'),
-		url('../fonts/Radomir Tinkov - Gilroy-Light.otf') format('woff2');
+		url('../fonts/Gilroy-Medium.ttf') format('woff2');
+}
+
+@font-face {
+	font-family: 'Gilroy Text';
+	font-style: italic;
+	font-weight: bold;
+	src: local('Gilroy Text'),
+		url('../fonts/Gilroy-BoldItalic.ttf') format('woff2');
 }
 
 html, body, div, span, applet, object, iframe,
@@ -443,7 +451,7 @@ table {
     text-align: center;
     color:#070707;
     font-family: 'Gilroy Text';
-    font-weight: medium;
+    font-weight: bold;
     font-size: 18px;
     line-height: 21.83px;
     margin-top: 20.03px;
@@ -497,9 +505,10 @@ table {
 
 .contact_text {
     text-align: center;
-    color:#828282;
+    color: #828282;
     font-family: 'Gilroy Text';
-    font-weight: medium;
+    font-style: normal;
+    font-weight: bold;
     font-size: 14px;
     line-height: 16.98px;
     margin-top: 45.8px;
