@@ -126,6 +126,9 @@
     }
 
     .contact_text {
+        font-family: 'Gilroy Text';
+        font-style: normal;
+        font-weight: bold;
         margin-bottom: 90px;
         font-size: 18px;
         line-height: 21.83px;
